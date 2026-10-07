@@ -1,0 +1,21 @@
+{
+  "name": "fischer-clock",
+  "version": "1.0.0",
+  "description": "Offline two-player Fischer increment chess clock backend (API + CLI)",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/server.js",
+    "demo": "npm run build && node dist/src/demo.js",
+    "cli": "node dist/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
